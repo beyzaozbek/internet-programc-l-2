@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,600&display=swap');
+
+:root {
+    --main-color: #55bead ;
+    --black-color: #000000;
+    --border: #0.1rem solid rgba(255,255,255);
+}
+
+* {
+    font-family: "Poppins" , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+
+}
+
+/* ! base hmtl codes */
+html{
+    font-size: 62.5½;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+
+}
+body{
+    background-color: var(--main-color);
+
+}
+
+section{
+    padding: 3.5rem 7%;
+}
+ /* !header start */
+.header .logo img {
+    height: 8rem;
+}
+
+
+.header{
+    background-color: #fff; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    position:sticky;
+    top:0;
+    z-index: 1000;
+
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size:  1.4rem;
+    color: var(--black-color);
+    border-bottom: 0.1rem solid transparent;
+}
+.header .navbar a:hover {
+ border-color: var(--main-color);
+ padding-bottom: 0.5rem;
+}
+
+.header .buttons button{
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+}
+
+ /* !header end */
+
+  /* !ANASAYFA start */
+  .ANASAYFA{
+    min-height: 100vh;
+    background: url(../resimler/anasayfa6.jpg)
+    no-repeat;
+    background-size: cover;
+    background-position:center;
+    margin-top: -10.7rem;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .ANASAYFA .content {
+    max-width: 60rem;
+
+  }
+
+  .ANASAYFA .content h3 {
+    font-size: 3.5rem;
+    color: #ffffff
+  }
+  .ANASAYFA .content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    padding: 1rem 0;
+    color: #ffffff;
+  }
+  /* !ANASAYFA end */
+
+  /* !HAKKIMIZDA start */
+  .menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    grid-template-rows: repeat(4, auto);
+    gap: 1.5rem;/*resimler arası boşluk*/
+}
+ 
+
+
+
+
+
+  /*iletişim start*/
+ .contact .row {
+    display: flex;
+    background-color:#f5f5f5;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  .contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+  }
+  
+  .contact .row form h3 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #333333;
+  }
+  
+  .contact .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    border: var(--border);
+  }
+  
+  .contact .row form .inputBox i {
+    color: #535353;
+    font-size: 2rem;
+    padding-left: 2rem;
+  }
+  
+  .contact .row form .inputBox input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background-color: transparent;
+  }
+  
+  .contact .row form .btn {
+    color: var(--main-color);
+    background-color: #fff;
+    font-weight: bold;
+  }
+ /*iletişim end*/
