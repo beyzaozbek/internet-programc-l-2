@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Jersey+10+Charted&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500; 0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&görüntü=takas'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=takas');  
  @import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Jersey+10+Charted&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500; 0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&görüntü=takas');
  @import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Jersey+10+Charted&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500; 0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&görüntü=takas');
  /* fontların linklerini aldığım site https://fonts.google.com/ */
@@ -39,7 +39,7 @@ li{
  }
 
  .container{
-     max-width: 3000px;  /*burası tam olmadı  */
+     max-width: 1170px;  
     margin: auto;
     padding: 0 15 px;
     
@@ -47,7 +47,7 @@ li{
 
  .header{
   
-  background-image: url(resimler/anasayfa12.avif);
+  background-image: url(resimler/anasayfa111.avif);
   /* resmi aldığım site  https://unsplash.com/s/photos/law */
   background-position: center;
   background-size: cover;
@@ -61,12 +61,12 @@ li{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 0;
+    padding: 20px 0;
  }
 
  .header-logo{
-    margin: 2%;
-    margin-bottom: 20px;
+    margin: 1%;
+    margin-bottom: 10px;
     padding-bottom: 10px;
  }
 
@@ -79,78 +79,88 @@ li{
     margin-left:27px ;
  }
 
-li:first-child{
-    margin-right: 70px;
-}
-
 a{
     color:#000000;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 
 }
 
-.header-text{
+.header-text{ 
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
+
     justify-content: center;
     flex-direction: column;
 
 }
+.header-menu li::after{
+    content:"";
+    width: 80px;
+    height: 6px;
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+}
 
 h1{
-    font-size: 4rem;
+
+    font-size: 7rem;
+    text-align: center;
     font-weight: 100;
-    line-height: 0.4 ;
-    letter-spacing: 2px;
-    /* font-family: 'Herr Von Muellerhoff',cursive; */
+    line-height: 1 ;
+    letter-spacing: 1px;
+    font-family: 'Herr Von Muellerhoff',"cursive";
     color:rgb(0, 0, 0)
-
 }
 
-::first-letter{
-    font-size: 4rem;
-    /* font-family: 'Herr Von Muellerhoff',cursive; */
-    color:rgb(0, 0, 0)
-
-}
 h3{
+    
     margin-bottom: 25px;
-    font-size: 28px;
+    /* text-align: center; */
+    margin-left: 10%; 
+    margin-right:10%;
+    font-size: 55px;
+  
+    color:rgb(0, 0, 0)
+    
 
 }
+/* Hakkımızda start */
 
-/* HAKKIMIZDA */
 .about{
     margin-bottom:150px;
+  
 
 }
-.about-tittle{
+.about-title{
     margin:60px 0; 
+    
 
 }
 
-.about-tittle h2{
+ .about-title h2{
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    color:rgb(88, 156, 233);
+    color:rgb(0, 0, 0);
     font-size: 30px;
     font-weight: 600;
 }
-    
-.about-tittle h2::after{
+  
+.about-title h2::after{
     content:"";
-    width: 30px;
-    height: 3px;
-    background-color: rgb(240, 242, 245);
-    margin: auto;
+    width: 80px;
+    height: 6px;
+    background-color: rgb(136, 37, 30);
+    margin: 0 auto;
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
 
 }
 
@@ -160,16 +170,87 @@ h3{
     justify-content: space-around;
 
 }
-
-.about-img{
-    width: 5%;
-    height: 5%;
-
+ .about-img{
+    width: 50%;
+    height: 50%;
+   
+ 
 }
 
 .about-img img{
-    width: 1005;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+.about-text{
+    width: 45%;
+}
+h4{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 60px;
+    color: black;
+    font-family:"Herr Von Muellerhoff,cursive;" ;
+    letter-spacing: 0.2rem;
+    font-weight: 100;
+}
+
+.about-text{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Courier New', "Courier", monospace;
+    color: #2c2727;
+}
+
+
+
+
+/* Hakkımızda finish */
+
+
+
+
+ /* Çalışma alanlarımız start  */
+
+ .alanlar{
+    display: flex;
+    flex-wrap: wrap;}
+ /* }
+ .alanlar-item{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+ }
+ .alanlar-item {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+ } */
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #bd7676;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Çalışma ALnlarımız finish */
+/* 
+ iletişim start */
+/* iletişim finish */
